@@ -1,0 +1,325 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ________________________________ */
+/*
+vertical-align - выравнивает строчные 
+и блочно-строчные объекты по вертикали
+top - по верху
+middle - по центру
+bottom - по низу
+*/
+
+/*
+Схлопывание внешнего отступа происходит 
+только с блочными объектами
+*/
+/*
+.block__texts {
+	font-size: 0;
+}
+
+.block__items {
+	font-size: 0;
+}
+
+.text-link {
+	color: green;
+	border-bottom: 2px dotted;
+	display: inline-block;
+}
+.text-link:hover {
+	color: red;
+}
+/* ------------------------------ */
+
+/*
+border
+Универсальное свойство border позволяет одновременно 
+установить толщину, 
+стиль и цвет границы вокруг элемента.
+border: 1px solid #000; (размер стиль цвет)
+Основные стили -solid dotted dashed double
+
+Синтаксис общего свойства:
+border: толщина_линии стиль_линии цвет_линии
+
+*/
+/*
+outline
+Универсальное свойство, одновременно устанавливающее цвет, 
+стиль и толщину внешней границы на всех четырех сторонах элемента. 
+В отличие от линии, задаваемой через border, свойство outline 
+не влияет на положение блока и его ширину. 
+Также нельзя задать параметры линии на отдельных сторонах элемента, 
+outline применяется сразу ко всем четырём сторонам.
+*/
+
+/*
+border-radius
+Устанавливает радиус скругления уголков блока.
+border-radius:50%; - кргуг
+Можно использовать вместе с overflow: hidden;
+*/
+
+/*
+box-shadow
+Добавляет тень к элементу.
+box-shadow: сдвиг_по_гориз сдвиг_по_верт радиус расстояние
+Флаг inset для установки внутренней тени
+Можно добавить много теней. На тень влияет свойство border-radius.
+filter: drop-shadow(0px 0px 10px #77608d);
+*/
+
+/*
+opacity
+Определяет уровень прозрачности элемента.
+Отличие opacity:0; от display:none; в том что блок 
+не убирается из верстки а только становиться прозрачным, 
+то есть занимаемое им место остается. Так же, 
+с прозрачными элементами все еще можно взаимодействовать, 
+например кликать по ссылкам.
+*/
+/*
+visibility
+Предназначен для отображения или скрытия элемента.
+Отличие visibility: hidden; от display:none; в том что блок 
+не убирается из верстки а только скрывается, 
+то есть занимаемое им место остается.
+Отличие visibility: hidden; от opacity:0;
+ в том что блок скрывается и взаимодействовать с ним нельзя.
+*/
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+	background: #f5f5f5;
+	width: 1440px;
+	height: 5500px;
+	margin: 0 0 30px 20px;
+}
+.page {
+	background: #ffffff;
+}
+.container {
+	width: 1020px;
+	height: 700px;
+	background: url("/img/Gears.png") 100% 0% / 642px no-repeat scroll;
+	box-shadow: 0px 1px 2px 1px rgba(104, 96, 96, 0.349);
+
+	/* background-position: top left; */
+}
+
+.title {
+	width: 583px;
+	height: 134px;
+	padding: 30px 0 0 0;
+	margin: 100px 350px 46px 87px;
+}
+.title__text {
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #4b4b4b;
+	margin: 0 0 25px 0;
+}
+.title__logo {
+	display: inline-block;
+	margin: 0 16px 0 0;
+}
+.title__h2 {
+	font-weight: 900;
+	font-size: 36px;
+	color: #02133c;
+	line-height: 42px;
+	margin: 0 0 30px 0;
+}
+.text__about {
+	width: 846px;
+	height: 76px;
+	margin: 0 87px 0 87px;
+	color: #4b4b4b;
+	letter-spacing: 0.15px;
+	line-height: 24px;
+	font-size: 16px;
+}
+/* .gears {
+	width: 642px;
+	height: 450px;
+	opacity: 0.55;
+} */
+
+.engine {
+	margin: -350px 87px 30px 87px;
+	box-shadow: 0px 1px 1px 1px grey;
+}
+
+/* ___________________________________ */
+
+.block {
+	width: 324px;
+	height: 340px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 30px 2px grey;
+	margin: 0 0 0 75px;
+}
+.service__card {
+	width: 237px;
+	height: 240px;
+	margin: 50px 44px 50px 43px;
+}
+.service__image {
+	margin: 0 auto;
+	display: block;
+	padding: 50px 0 0 0;
+}
+.service__title3 {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	text-align: center;
+	color: #02133c;
+	margin: 33px 0 20px 0;
+}
+.service__text {
+	color: #4b4b4b;
+	letter-spacing: 0.15px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+.block2 {
+	width: 324px;
+	height: 340px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 30px 2px grey;
+	margin: 0 0 0 75px;
+}
+
+.tires__card {
+	background: #ffffff;
+	width: 237px;
+	height: 240px;
+	margin: 50px 44px 50px 43px;
+}
+
+/* ____________________________ */
+
+.shop__text {
+	font-family: "Poppins", sans-serif;
+	color: #000000;
+	background: #ffffff;
+}
+.title__text2 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 48px;
+	margin: 90px 61px 26px 61px;
+}
+.subtittle {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	text-transform: uppercase;
+	margin: 0 61px 19px 61px;
+}
+.block__adout {
+	width: 1039px;
+	height: 2840px;
+	margin: 0 61px 60px 61px;
+}
+
+.text__title4 {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0 5px 22px 0;
+}
+.text {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0 5px 22px 0;
+}
+
+p ~ ul {
+	margin: 0 0 22px 0;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.block__quality {
+	width: 400px;
+	margin: 90px 0;
+}
+.marker {
+	margin: 0 0 15px 0;
+}
+.block__title {
+	font-size: 44px;
+	font-weight: 500;
+	line-height: 58px;
+	margin: 0 0 15px 0;
+}
+.block__text {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 26px;
+	width: 385px;
+}
